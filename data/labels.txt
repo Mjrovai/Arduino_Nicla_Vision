@@ -1,0 +1,3 @@
+periquito
+robot
+background
