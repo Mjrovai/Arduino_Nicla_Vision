@@ -59,13 +59,12 @@ static int print_results = -(EI_CLASSIFIER_SLICES_PER_MODEL_WINDOW);
  */
 void setup()
 {
-    // put your setup code here, to run once:
+    // Once you finish with debuging your code you can comment or delete the Serial part
     Serial.begin(115200);
-    // comment out the below line to cancel the wait for USB connection (needed for native USB)
     while (!Serial);
     Serial.println("Inferencing - Nicla Vision KWS with LEDs");
     
-    // Pins for the built-in RGB LEDs on the Arduino Nano 33 BLE Sense
+    // Pins for the built-in RGB LEDs on the NiclaV
     pinMode(LEDR, OUTPUT);
     pinMode(LEDG, OUTPUT);
     pinMode(LEDB, OUTPUT);
